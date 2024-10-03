@@ -32,7 +32,7 @@ class tab2 extends StatelessWidget {
                       horizontal: 10,
                     ),
                     child: Container(
-                      child: Image.asset("lib/icons/lock.png"),
+                      child: Image.asset("assets/icons/lock.png"),
                     ),
                   ),
                   prefixIconColor: const Color.fromARGB(255, 3, 190, 150),

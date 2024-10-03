@@ -33,7 +33,7 @@ class tab1 extends StatelessWidget {
                       horizontal: 10,
                     ),
                     child: Container(
-                      child: Image.asset("lib/icons/email.png"),
+                      child: Image.asset("assets/icons/email.png"),
                     ),
                   ),
                   prefixIconColor: const Color.fromARGB(255, 3, 190, 150),

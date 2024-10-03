@@ -23,7 +23,7 @@ class login extends StatelessWidget {
           icon: Container(
               height: MediaQuery.of(context).size.height * 0.06,
               width: MediaQuery.of(context).size.width * 0.06,
-              child: Image.asset("lib/icons/back2.png")),
+              child: Image.asset("assets/icons/back2.png")),
           onPressed: () {
             Navigator.push(
                 context,

@@ -39,7 +39,7 @@ class _Screen1State extends State<Screen1> {
               width: MediaQuery.of(context).size.height * 01,
               decoration: const BoxDecoration(
                   image: DecorationImage(
-                    image: AssetImage("images/logo.png"),
+                    image: AssetImage("assets/images/logo.png"),
                   )),
             )
           ]),

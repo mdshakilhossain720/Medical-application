@@ -22,7 +22,7 @@ class on_board1 extends StatelessWidget {
               image: DecorationImage(
                   alignment: Alignment.bottomCenter,
                   image: AssetImage(
-                    "images/doctor1.png",
+                    "assets/images/doctor1.png",
                   ),
                   filterQuality: FilterQuality.high)),
         ),

@@ -8,6 +8,9 @@ import '../../widgets/airticle.dart';
 import '../../widgets/banner.dart';
 import '../../widgets/list_doctor.dart';
 import '../../widgets/list_icon.dart';
+import 'airtcle_page.dart';
+import 'doctor_search.dart';
+import 'find_doctor.dart';
 
 class Dashboard extends StatelessWidget {
   const Dashboard({super.key});

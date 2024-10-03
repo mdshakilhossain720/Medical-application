@@ -1,18 +1,20 @@
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:medicalapplication/screen/views/sedule_time2.dart';
+
 import 'package:responsive_sizer/responsive_sizer.dart';
 
-import '../views/sedule_time1.dart';
-import '../views/sedule_time2.dart';
+import '../../widgets/tab_bar_view/message_tab_all.dart';
 
-class shedule_screen extends StatefulWidget {
-  const shedule_screen({Key? key}) : super(key: key);
+class message_screen extends StatefulWidget {
+  const message_screen({Key? key}) : super(key: key);
 
   @override
   _TabBarExampleState createState() => _TabBarExampleState();
 }
 
-class _TabBarExampleState extends State<shedule_screen>
+class _TabBarExampleState extends State<message_screen>
     with SingleTickerProviderStateMixin {
   late TabController tabController;
 
@@ -48,7 +50,7 @@ class _TabBarExampleState extends State<shedule_screen>
               width: 20,
               decoration: const BoxDecoration(
                   image: DecorationImage(
-                    image: AssetImage("assets/icons/bell.png"),
+                    image: AssetImage("lib/icons/bell.png"),
                   )),
             ),
           ),
@@ -108,14 +110,11 @@ class _TabBarExampleState extends State<shedule_screen>
                         ),
                       ),
                     ),
-                    Expanded(
-                        child: TabBarView(
-                            controller: tabController,
-                            children: const [
-                              shedule_tab1(),
-                              shedule_tab2(),
-                              shedule_tab2(),
-                            ]))
+                    TabBarView(controller: tabController, children: const [
+                      message_tab_all(),
+                      shedule_tab2(),
+                      shedule_tab2(),
+                    ])
                   ],
                 ),
               ),

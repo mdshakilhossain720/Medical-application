@@ -95,7 +95,7 @@ class _on_boardingState extends State<on_boarding> {
                                 height:
                                 MediaQuery.of(context).size.height * 0.04,
                                 width: MediaQuery.of(context).size.width * 0.04,
-                                child: Image.asset("lib/icons/check.png"),
+                                child: Image.asset("assets/icons/check.png"),
                               ),
                             ],
                           ),
@@ -129,7 +129,7 @@ class _on_boardingState extends State<on_boarding> {
                                 height:
                                 MediaQuery.of(context).size.height * 0.06,
                                 width: MediaQuery.of(context).size.width * 0.06,
-                                child: Image.asset("lib/icons/arrow.png"),
+                                child: Image.asset("assets/icons/arrow.png"),
                               ),
                             ],
                           ),

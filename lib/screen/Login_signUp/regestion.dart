@@ -21,7 +21,7 @@ class register extends StatelessWidget {
           icon: Container(
               height: MediaQuery.of(context).size.height * 0.06,
               width: MediaQuery.of(context).size.width * 0.06,
-              child: Image.asset("lib/icons/back2.png")),
+              child: Image.asset("assets/icons/back2.png")),
           onPressed: () {
             Navigator.push(
                 context,
@@ -66,7 +66,7 @@ class register extends StatelessWidget {
                         horizontal: 10,
                       ),
                       child: Container(
-                        child: Image.asset("lib/icons/person.png"),
+                        child: Image.asset("assets/icons/person.png"),
                       ),
                     ),
                     prefixIconColor: const Color.fromARGB(255, 3, 190, 150),
