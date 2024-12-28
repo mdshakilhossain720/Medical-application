@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 import '../../widgets/shedule_card.dart';
 
 class shedule_tab1 extends StatelessWidget {
@@ -20,7 +19,7 @@ class shedule_tab1 extends StatelessWidget {
           subText: "Chardiologist",
           date: "26/06/2022",
           time: "10:30 AM",
-          image: "lib/icons/male-doctor.png",
+          image: "assets/icons/male-doctor.png",
         ),
         const SizedBox(
           height: 20,
@@ -31,7 +30,7 @@ class shedule_tab1 extends StatelessWidget {
           subText: "Chardiologist",
           date: "26/06/2022",
           time: "2:00 PM",
-          image: "lib/icons/female-doctor2.png",
+          image: "assets/icons/female-doctor2.png",
         )
       ]),
     );

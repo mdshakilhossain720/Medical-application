@@ -1,7 +1,5 @@
-
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-
 import 'package:page_transition/page_transition.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
@@ -29,8 +27,8 @@ class doctor_search extends StatelessWidget {
             width: 10,
             decoration: const BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage("lib/icons/back1.png"),
-                )),
+              image: AssetImage("lib/icons/back1.png"),
+            )),
           ),
         ),
         title: Text(
@@ -48,8 +46,8 @@ class doctor_search extends StatelessWidget {
               width: 10,
               decoration: const BoxDecoration(
                   image: DecorationImage(
-                    image: AssetImage("lib/icons/more.png"),
-                  )),
+                image: AssetImage("lib/icons/more.png"),
+              )),
             ),
           ),
         ],
@@ -57,48 +55,48 @@ class doctor_search extends StatelessWidget {
       ),
       body: SafeArea(
           child: Column(
-            children: [
-              GestureDetector(
-                onTap: () {
-                  Navigator.push(
-                      context,
-                      PageTransition(
-                          type: PageTransitionType.rightToLeft,
-                          child: DoctorDetails()));
-                },
-                child: doctorList(
-                    distance: "800m Away",
-                    image: "lib/icons/male-doctor.png",
-                    maintext: "Dr. Marcus Horizon",
-                    numRating: "4.7",
-                    subtext: "Chardiologist"),
-              ),
-              doctorList(
-                  distance: "800m Away",
-                  image: "lib/icons/docto3.png",
-                  maintext: "Dr. Marcus Horizon",
-                  numRating: "4.7",
-                  subtext: "Chardiologist"),
-              doctorList(
-                  distance: "800m Away",
-                  image: "lib/icons/doctor2.png",
-                  maintext: "Dr. Marcus Horizon",
-                  numRating: "4.7",
-                  subtext: "Chardiologist"),
-              doctorList(
-                  distance: "800m Away",
-                  image: "lib/icons/black-doctor.png",
-                  maintext: "Dr. Marcus Horizon",
-                  numRating: "4.7",
-                  subtext: "Chardiologist"),
-              doctorList(
-                  distance: "800m Away",
-                  image: "lib/icons/male-doctor.png",
-                  maintext: "Dr. Marcus Horizon",
-                  numRating: "4.7",
-                  subtext: "Chardiologist"),
-            ],
-          )),
+        children: [
+          GestureDetector(
+            onTap: () {
+              Navigator.push(
+                  context,
+                  PageTransition(
+                      type: PageTransitionType.rightToLeft,
+                      child: DoctorDetails()));
+            },
+            child: doctorList(
+                distance: "800m Away",
+                image: "assets/icons/male-doctor.png",
+                maintext: "Dr. Marcus Horizon",
+                numRating: "4.7",
+                subtext: "Chardiologist"),
+          ),
+          doctorList(
+              distance: "800m Away",
+              image: "assets/images/doctor3.png",
+              maintext: "Dr. Marcus Horizon",
+              numRating: "4.7",
+              subtext: "Chardiologist"),
+          doctorList(
+              distance: "800m Away",
+              image: "assets/images/doctor2.png",
+              maintext: "Dr. Marcus Horizon",
+              numRating: "4.7",
+              subtext: "Chardiologist"),
+          doctorList(
+              distance: "800m Away",
+              image: "lib/icons/black-doctor.png",
+              maintext: "Dr. Marcus Horizon",
+              numRating: "4.7",
+              subtext: "Chardiologist"),
+          doctorList(
+              distance: "800m Away",
+              image: "assets/icons/male-doctor.png",
+              maintext: "Dr. Marcus Horizon",
+              numRating: "4.7",
+              subtext: "Chardiologist"),
+        ],
+      )),
     );
   }
 }

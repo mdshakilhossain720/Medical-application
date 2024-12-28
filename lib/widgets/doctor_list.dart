@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
@@ -12,10 +11,10 @@ class doctorList extends StatelessWidget {
 
   doctorList(
       {required this.distance,
-        required this.image,
-        required this.maintext,
-        required this.numRating,
-        required this.subtext});
+      required this.image,
+      required this.maintext,
+      required this.numRating,
+      required this.subtext});
 
   @override
   Widget build(BuildContext context) {
@@ -81,12 +80,12 @@ class doctorList extends StatelessWidget {
                           child: Row(children: [
                             Container(
                               height:
-                              MediaQuery.of(context).size.height * 0.01500,
+                                  MediaQuery.of(context).size.height * 0.01500,
                               width: MediaQuery.of(context).size.width * 0.03,
                               decoration: const BoxDecoration(
                                   image: DecorationImage(
                                       image: AssetImage(
-                                        "lib/icons/star.png",
+                                        "assets/icons/Star.png",
                                       ),
                                       filterQuality: FilterQuality.high)),
                             ),
@@ -111,7 +110,7 @@ class doctorList extends StatelessWidget {
                         decoration: const BoxDecoration(
                           image: DecorationImage(
                               image: AssetImage(
-                                "lib/icons/Location.png",
+                                "assets/icons/Location .png",
                               ),
                               filterQuality: FilterQuality.high),
                         ),

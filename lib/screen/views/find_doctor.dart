@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-
 import 'package:page_transition/page_transition.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
@@ -161,7 +160,7 @@ class find_doctor extends StatelessWidget {
             },
             child: doctorList(
                 distance: "800m away",
-                image: "lib/icons/male-doctor.png",
+                image: "assets/icons/male-doctor.png",
                 maintext: "Dr. Marcus Horizon",
                 numRating: "4.7",
                 subtext: "Chardiologist"),
@@ -200,7 +199,7 @@ class find_doctor extends StatelessWidget {
                     decoration: const BoxDecoration(
                         shape: BoxShape.circle,
                         image: DecorationImage(
-                            image: AssetImage("lib/icons/male-doctor.png"),
+                            image: AssetImage("assets/icons/male-doctor.png"),
                             filterQuality: FilterQuality.high)),
                   ),
                   const SizedBox(

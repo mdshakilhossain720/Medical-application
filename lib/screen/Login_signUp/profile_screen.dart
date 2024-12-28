@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-
 import 'package:responsive_sizer/responsive_sizer.dart';
 
 import '../../widgets/profile_list.dart';
@@ -11,17 +10,17 @@ class Profile_screen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 3, 226, 215),
+      backgroundColor: const Color.fromARGB(255, 3, 226, 215),
       body: SingleChildScrollView(
         child: Column(
           children: [
-            SizedBox(
+            const SizedBox(
               height: 50,
             ),
             Center(
               child: Stack(
                 children: [
-                  SizedBox(
+                  const SizedBox(
                     height: 50,
                   ),
                   Container(
@@ -51,7 +50,7 @@ class Profile_screen extends StatelessWidget {
                           shape: BoxShape.circle,
                           border: Border.all(width: 1, color: Colors.white),
                           color: Colors.white,
-                          image: DecorationImage(
+                          image: const DecorationImage(
                               image: AssetImage("assets/icons/camra.png"))),
                     ),
                   ),
@@ -73,7 +72,7 @@ class Profile_screen extends StatelessWidget {
                 )
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
             Padding(
@@ -81,7 +80,7 @@ class Profile_screen extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Container(
+                  SizedBox(
                     height: MediaQuery.of(context).size.height * 0.0900,
                     width: MediaQuery.of(context).size.width * 0.2500,
                     child: Column(children: [
@@ -99,7 +98,7 @@ class Profile_screen extends StatelessWidget {
                         style: GoogleFonts.poppins(
                             fontSize: 13.sp,
                             fontWeight: FontWeight.w600,
-                            color: Color.fromARGB(255, 245, 243, 243)),
+                            color: const Color.fromARGB(255, 245, 243, 243)),
                       ),
                       const SizedBox(
                         height: 5,
@@ -109,7 +108,7 @@ class Profile_screen extends StatelessWidget {
                         style: GoogleFonts.poppins(
                             fontSize: 15.sp,
                             fontWeight: FontWeight.w600,
-                            color: Color.fromARGB(255, 255, 255, 255)),
+                            color: const Color.fromARGB(255, 255, 255, 255)),
                       )
                     ]),
                   ),
@@ -118,7 +117,7 @@ class Profile_screen extends StatelessWidget {
                     width: 1,
                     color: Colors.white,
                   ),
-                  Container(
+                  SizedBox(
                     height: MediaQuery.of(context).size.height * 0.0900,
                     width: MediaQuery.of(context).size.width * 0.2500,
                     child: Column(children: [
@@ -136,7 +135,7 @@ class Profile_screen extends StatelessWidget {
                         style: GoogleFonts.poppins(
                             fontSize: 13.sp,
                             fontWeight: FontWeight.w600,
-                            color: Color.fromARGB(255, 245, 243, 243)),
+                            color: const Color.fromARGB(255, 245, 243, 243)),
                       ),
                       const SizedBox(
                         height: 5,
@@ -146,7 +145,7 @@ class Profile_screen extends StatelessWidget {
                         style: GoogleFonts.poppins(
                             fontSize: 15.sp,
                             fontWeight: FontWeight.w600,
-                            color: Color.fromARGB(255, 255, 255, 255)),
+                            color: const Color.fromARGB(255, 255, 255, 255)),
                       )
                     ]),
                   ),
@@ -155,7 +154,7 @@ class Profile_screen extends StatelessWidget {
                     width: 1,
                     color: Colors.white,
                   ),
-                  Container(
+                  SizedBox(
                     height: MediaQuery.of(context).size.height * 0.0900,
                     width: MediaQuery.of(context).size.width * 0.2500,
                     child: Column(children: [
@@ -173,7 +172,7 @@ class Profile_screen extends StatelessWidget {
                         style: GoogleFonts.poppins(
                             fontSize: 13.sp,
                             fontWeight: FontWeight.w600,
-                            color: Color.fromARGB(255, 245, 243, 243)),
+                            color: const Color.fromARGB(255, 245, 243, 243)),
                       ),
                       const SizedBox(
                         height: 5,
@@ -183,7 +182,7 @@ class Profile_screen extends StatelessWidget {
                         style: GoogleFonts.poppins(
                             fontSize: 15.sp,
                             fontWeight: FontWeight.w600,
-                            color: Color.fromARGB(255, 255, 255, 255)),
+                            color: const Color.fromARGB(255, 255, 255, 255)),
                       )
                     ]),
                   ),
@@ -202,7 +201,7 @@ class Profile_screen extends StatelessWidget {
                       topLeft: Radius.circular(30),
                       topRight: Radius.circular(30))),
               child: Column(children: [
-                SizedBox(
+                const SizedBox(
                   height: 50,
                 ),
                 profile_list(
@@ -224,7 +223,7 @@ class Profile_screen extends StatelessWidget {
                   child: Divider(),
                 ),
                 profile_list(
-                  image: "assets/icons/chat.png",
+                  image: "assets/icons/Chat.png",
                   title: "FAQs",
                   color: Colors.black87,
                 ),

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-
 import 'package:page_transition/page_transition.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
@@ -27,8 +26,8 @@ class appointment extends StatelessWidget {
             width: 10,
             decoration: const BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage("lib/icons/back1.png"),
-                )),
+              image: AssetImage("lib/icons/back1.png"),
+            )),
           ),
         ),
         title: Text(
@@ -46,8 +45,8 @@ class appointment extends StatelessWidget {
               width: 10,
               decoration: const BoxDecoration(
                   image: DecorationImage(
-                    image: AssetImage("lib/icons/more.png"),
-                  )),
+                image: AssetImage("lib/icons/more.png"),
+              )),
             ),
           ),
         ],
@@ -62,7 +61,7 @@ class appointment extends StatelessWidget {
               ),
               doctorList(
                 distance: "800m away",
-                image: "lib/icons/male-doctor.png",
+                image: "assets/icons/male-doctor.png",
                 maintext: "Dr. Marcus Horizon",
                 numRating: "4.7",
                 subtext: "Cardiologist",

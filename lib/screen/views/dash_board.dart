@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-
 import 'package:page_transition/page_transition.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
@@ -147,9 +146,8 @@ class Dashboard extends StatelessWidget {
                     Navigator.pushReplacement(
                         context,
                         PageTransition(
-                            type: PageTransitionType.rightToLeft,
-                            child: doctor_search(),
-
+                          type: PageTransitionType.rightToLeft,
+                          child: doctor_search(),
                         ));
                   },
                   child: Text(
@@ -177,19 +175,19 @@ class Dashboard extends StatelessWidget {
                 children: [
                   list_doctor1(
                       distance: "130m Away",
-                      image: "lib/icons/male-doctor.png",
+                      image: "assets/icons/male-doctor.png",
                       maintext: "Dr. Marcus Horizon",
                       numRating: "4.7",
                       subtext: "Chardiologist"),
                   list_doctor1(
                       distance: "130m Away",
-                      image: "lib/icons/docto3.png",
+                      image: "assets/images/doctor3.png",
                       maintext: "Dr. Maria Elena",
                       numRating: "4.6",
                       subtext: "Psychologist"),
                   list_doctor1(
                       distance: "2km away",
-                      image: "lib/icons/doctor2.png",
+                      image: "assets/images/doctor2.png",
                       maintext: "Dr. Stevi Jessi",
                       numRating: "4.8",
                       subtext: "Orthopedist"),
@@ -218,8 +216,8 @@ class Dashboard extends StatelessWidget {
                     Navigator.pushReplacement(
                         context,
                         PageTransition(
-                            type: PageTransitionType.rightToLeft,
-                            child: articlePage(),
+                          type: PageTransitionType.rightToLeft,
+                          child: articlePage(),
                         ));
                   },
                   child: Text(
@@ -238,11 +236,11 @@ class Dashboard extends StatelessWidget {
           ),
           //Article banner here import from widget>article
           article(
-              image: "images/article1.png",
+              image: "assets/images/article1.png",
               dateText: "Jun 10, 2021 ",
               duration: "5min read",
               mainText:
-              "The 25 Healthiest Fruits You Can Eat,\nAccording to a Nutritionist"),
+                  "The 25 Healthiest Fruits You Can Eat,\nAccording to a Nutritionist"),
         ]),
       ),
     );

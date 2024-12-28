@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-
 import 'package:page_transition/page_transition.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
@@ -50,8 +49,8 @@ class _TabBarExampleState extends State<message_tab_all>
               width: 20,
               decoration: const BoxDecoration(
                   image: DecorationImage(
-                    image: AssetImage("lib/icons/bell.png"),
-                  )),
+                image: AssetImage("assets/icons/bell.png"),
+              )),
             ),
           ),
         ],
@@ -63,13 +62,12 @@ class _TabBarExampleState extends State<message_tab_all>
             Navigator.push(
                 context,
                 PageTransition(
-                    type: PageTransitionType.bottomToTop,
-                    child: chat_screen(),
-
+                  type: PageTransitionType.bottomToTop,
+                  child: chat_screen(),
                 ));
           },
           child: message_all_widget(
-            image: "lib/icons/male-doctor.png",
+            image: "assets/icons/male-doctor.png",
             Maintext: "Dr. Marcus Horizon",
             subtext: "I don,t have any fever, but headchace...",
             time: "10.24",
@@ -77,14 +75,14 @@ class _TabBarExampleState extends State<message_tab_all>
           ),
         ),
         message_all_widget(
-          image: "lib/icons/docto3.png",
+          image: "assets/images/doctor3.png",
           Maintext: "Dr. Alysa Hana",
           subtext: "Hello, How can i help you?",
           time: "10.24",
           message_count: "1",
         ),
         message_all_widget(
-          image: "lib/icons/doctor2.png",
+          image: "assets/images/doctor2.png",
           Maintext: "Dr. Maria Elena",
           subtext: "Do you have fever?",
           time: "10.24",

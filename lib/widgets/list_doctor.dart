@@ -11,10 +11,10 @@ class list_doctor1 extends StatelessWidget {
 
   list_doctor1(
       {required this.distance,
-        required this.image,
-        required this.maintext,
-        required this.numRating,
-        required this.subtext});
+      required this.image,
+      required this.maintext,
+      required this.numRating,
+      required this.subtext});
 
   @override
   Widget build(BuildContext context) {
@@ -80,12 +80,12 @@ class list_doctor1 extends StatelessWidget {
                         child: Row(children: [
                           Container(
                             height:
-                            MediaQuery.of(context).size.height * 0.01500,
+                                MediaQuery.of(context).size.height * 0.01500,
                             width: MediaQuery.of(context).size.width * 0.03,
                             decoration: const BoxDecoration(
                                 image: DecorationImage(
                                     image: AssetImage(
-                                      "lib/icons/star.png",
+                                      "assets/icons/Star.png",
                                     ),
                                     filterQuality: FilterQuality.high)),
                           ),
@@ -111,7 +111,7 @@ class list_doctor1 extends StatelessWidget {
                         decoration: const BoxDecoration(
                           image: DecorationImage(
                               image: AssetImage(
-                                "lib/icons/Location.png",
+                                "assets/icons/Location .png",
                               ),
                               filterQuality: FilterQuality.high),
                         ),

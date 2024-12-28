@@ -1,8 +1,6 @@
-
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:medicalapplication/screen/views/sedule_time2.dart';
-
 import 'package:responsive_sizer/responsive_sizer.dart';
 
 import '../../widgets/tab_bar_view/message_tab_all.dart';
@@ -50,8 +48,8 @@ class _TabBarExampleState extends State<message_screen>
               width: 20,
               decoration: const BoxDecoration(
                   image: DecorationImage(
-                    image: AssetImage("lib/icons/bell.png"),
-                  )),
+                image: AssetImage("assets/icons/bell.png"),
+              )),
             ),
           ),
         ],
@@ -88,9 +86,9 @@ class _TabBarExampleState extends State<message_screen>
                                   borderRadius: BorderRadius.circular(8),
                                 ),
                                 indicatorColor:
-                                const Color.fromARGB(255, 241, 241, 241),
+                                    const Color.fromARGB(255, 241, 241, 241),
                                 unselectedLabelColor:
-                                const Color.fromARGB(255, 32, 32, 32),
+                                    const Color.fromARGB(255, 32, 32, 32),
                                 labelColor: Color.fromARGB(255, 255, 255, 255),
                                 controller: tabController,
                                 tabs: const [

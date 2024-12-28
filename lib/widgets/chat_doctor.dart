@@ -20,7 +20,7 @@ class chat_doctor extends StatelessWidget {
                 color: Colors.black,
                 shape: BoxShape.circle,
                 image: DecorationImage(
-                    image: AssetImage("lib/icons/male-doctor.png"),
+                    image: AssetImage("assets/icons/male-doctor.png"),
                     filterQuality: FilterQuality.high),
               ),
             ),

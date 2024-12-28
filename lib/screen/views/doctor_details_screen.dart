@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-
 import 'package:page_transition/page_transition.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
@@ -37,8 +36,8 @@ class _DoctorDetailsState extends State<DoctorDetails> {
               width: 10,
               decoration: const BoxDecoration(
                   image: DecorationImage(
-                    image: AssetImage("lib/icons/back1.png"),
-                  )),
+                image: AssetImage("lib/icons/back1.png"),
+              )),
             ),
           ),
           title: Text(
@@ -56,8 +55,8 @@ class _DoctorDetailsState extends State<DoctorDetails> {
                 width: 10,
                 decoration: const BoxDecoration(
                     image: DecorationImage(
-                      image: AssetImage("lib/icons/more.png"),
-                    )),
+                  image: AssetImage("lib/icons/more.png"),
+                )),
               ),
             ),
           ],
@@ -75,7 +74,7 @@ class _DoctorDetailsState extends State<DoctorDetails> {
                 ),
                 doctorList(
                   distance: "800m away",
-                  image: "lib/icons/male-doctor.png",
+                  image: "assets/icons/male-doctor.png",
                   maintext: "Dr. Marcus Horizon",
                   numRating: "4.7",
                   subtext: "Cardiologist",
@@ -116,7 +115,7 @@ class _DoctorDetailsState extends State<DoctorDetails> {
                             color: showExtendedText
                                 ? Color.fromARGB(255, 1, 128, 111)
                                 : Color.fromARGB(255, 1, 128,
-                                111), // Change color based on visibility
+                                    111), // Change color based on visibility
                           ),
                         ),
                       ],

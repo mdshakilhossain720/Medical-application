@@ -10,10 +10,10 @@ class message_all_widget extends StatelessWidget {
 
   message_all_widget(
       {required this.Maintext,
-        required this.subtext,
-        required this.image,
-        required this.message_count,
-        required this.time});
+      required this.subtext,
+      required this.image,
+      required this.message_count,
+      required this.time});
 
   @override
   Widget build(BuildContext context) {
@@ -50,7 +50,7 @@ class message_all_widget extends StatelessWidget {
                     const SizedBox(
                       height: 8,
                     ),
-                    //Main text here "lib/icons/male-doctor.png"
+                    //Main text here "assets/icons/male-doctor.png"
                     Text(
                       Maintext,
                       style: GoogleFonts.poppins(

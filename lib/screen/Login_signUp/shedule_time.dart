@@ -6,7 +6,7 @@ import '../views/sedule_time1.dart';
 import '../views/sedule_time2.dart';
 
 class shedule_screen extends StatefulWidget {
-  const shedule_screen({Key? key}) : super(key: key);
+  const shedule_screen({super.key});
 
   @override
   _TabBarExampleState createState() => _TabBarExampleState();
@@ -48,20 +48,20 @@ class _TabBarExampleState extends State<shedule_screen>
               width: 20,
               decoration: const BoxDecoration(
                   image: DecorationImage(
-                    image: AssetImage("assets/icons/bell.png"),
-                  )),
+                image: AssetImage("assets/icons/bell.png"),
+              )),
             ),
           ),
         ],
         backgroundColor: Colors.white,
       ),
       body: SingleChildScrollView(
-        physics: NeverScrollableScrollPhysics(),
+        physics: const NeverScrollableScrollPhysics(),
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 00),
           child: Column(
             children: [
-              Container(
+              SizedBox(
                 height: MediaQuery.of(context).size.height,
                 child: Column(
                   children: [
@@ -72,24 +72,25 @@ class _TabBarExampleState extends State<shedule_screen>
                         width: MediaQuery.of(context).size.height,
                         decoration: BoxDecoration(
                           border: Border.all(
-                              color: Color.fromARGB(255, 235, 235, 235)),
-                          color: Color.fromARGB(255, 241, 241, 241),
+                              color: const Color.fromARGB(255, 235, 235, 235)),
+                          color: const Color.fromARGB(255, 241, 241, 241),
                           borderRadius: BorderRadius.circular(10),
                         ),
                         child: Column(
                           children: [
                             Padding(
-                              padding: EdgeInsets.all(5),
+                              padding: const EdgeInsets.all(5),
                               child: TabBar(
                                 indicator: BoxDecoration(
-                                  color: Color.fromARGB(255, 5, 185, 155),
+                                  color: const Color.fromARGB(255, 5, 185, 155),
                                   borderRadius: BorderRadius.circular(8),
                                 ),
                                 indicatorColor:
-                                const Color.fromARGB(255, 241, 241, 241),
+                                    const Color.fromARGB(255, 241, 241, 241),
                                 unselectedLabelColor:
-                                const Color.fromARGB(255, 32, 32, 32),
-                                labelColor: Color.fromARGB(255, 255, 255, 255),
+                                    const Color.fromARGB(255, 32, 32, 32),
+                                labelColor:
+                                    const Color.fromARGB(255, 255, 255, 255),
                                 controller: tabController,
                                 tabs: const [
                                   Tab(
@@ -112,10 +113,10 @@ class _TabBarExampleState extends State<shedule_screen>
                         child: TabBarView(
                             controller: tabController,
                             children: const [
-                              shedule_tab1(),
-                              shedule_tab2(),
-                              shedule_tab2(),
-                            ]))
+                          shedule_tab1(),
+                          shedule_tab2(),
+                          shedule_tab2(),
+                        ]))
                   ],
                 ),
               ),

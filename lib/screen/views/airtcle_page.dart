@@ -1,7 +1,5 @@
-
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-
 import 'package:page_transition/page_transition.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
@@ -128,13 +126,13 @@ class articlePage extends StatelessWidget {
                       ),
                       child: Center(
                           child: Text(
-                            "Covid-19",
-                            style: GoogleFonts.poppins(
-                                fontSize: 15,
-                                fontWeight: FontWeight.w600,
-                                color: Colors.white,
-                                letterSpacing: 1),
-                          )),
+                        "Covid-19",
+                        style: GoogleFonts.poppins(
+                            fontSize: 15,
+                            fontWeight: FontWeight.w600,
+                            color: Colors.white,
+                            letterSpacing: 1),
+                      )),
                     ),
                     const SizedBox(
                       width: 10,
@@ -150,13 +148,13 @@ class articlePage extends StatelessWidget {
                       ),
                       child: Center(
                           child: Text(
-                            "Diet",
-                            style: GoogleFonts.poppins(
-                                fontSize: 15,
-                                fontWeight: FontWeight.w600,
-                                color: Colors.white,
-                                letterSpacing: 1),
-                          )),
+                        "Diet",
+                        style: GoogleFonts.poppins(
+                            fontSize: 15,
+                            fontWeight: FontWeight.w600,
+                            color: Colors.white,
+                            letterSpacing: 1),
+                      )),
                     ),
                     const SizedBox(
                       width: 10,
@@ -172,13 +170,13 @@ class articlePage extends StatelessWidget {
                       ),
                       child: Center(
                           child: Text(
-                            "Fitness",
-                            style: GoogleFonts.poppins(
-                                fontSize: 15,
-                                fontWeight: FontWeight.w600,
-                                color: Colors.white,
-                                letterSpacing: 1),
-                          )),
+                        "Fitness",
+                        style: GoogleFonts.poppins(
+                            fontSize: 15,
+                            fontWeight: FontWeight.w600,
+                            color: Colors.white,
+                            letterSpacing: 1),
+                      )),
                     ),
                     const SizedBox(
                       width: 10,
@@ -197,13 +195,13 @@ class articlePage extends StatelessWidget {
                       ),
                       child: Center(
                           child: Text(
-                            "Medicines",
-                            style: GoogleFonts.poppins(
-                                fontSize: 15,
-                                fontWeight: FontWeight.w600,
-                                color: Colors.white,
-                                letterSpacing: 1),
-                          )),
+                        "Medicines",
+                        style: GoogleFonts.poppins(
+                            fontSize: 15,
+                            fontWeight: FontWeight.w600,
+                            color: Colors.white,
+                            letterSpacing: 1),
+                      )),
                     ),
                   ]),
                 ),
@@ -257,14 +255,14 @@ class articlePage extends StatelessWidget {
                               padding: const EdgeInsets.all(10),
                               child: Container(
                                 height:
-                                MediaQuery.of(context).size.height * 0.1000,
+                                    MediaQuery.of(context).size.height * 0.1000,
                                 width:
-                                MediaQuery.of(context).size.width * 0.3500,
+                                    MediaQuery.of(context).size.width * 0.3500,
                                 decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(15),
                                     image: const DecorationImage(
                                         image: AssetImage(
-                                          "images/article1.png",
+                                          "assets/images/article1.png",
                                         ),
                                         filterQuality: FilterQuality.high,
                                         fit: BoxFit.cover)),
@@ -277,7 +275,7 @@ class articlePage extends StatelessWidget {
                                 height: MediaQuery.of(context).size.height *
                                     0.01800,
                                 width:
-                                MediaQuery.of(context).size.width * 0.1200,
+                                    MediaQuery.of(context).size.width * 0.1200,
                                 color: Color.fromARGB(255, 233, 231, 231),
                                 child: Row(
                                     mainAxisAlignment: MainAxisAlignment.center,
@@ -295,7 +293,7 @@ class articlePage extends StatelessWidget {
                             ),
                             Padding(
                               padding:
-                              const EdgeInsets.symmetric(horizontal: 15),
+                                  const EdgeInsets.symmetric(horizontal: 15),
                               child: Text(
                                 "Comparing the AstraZeneca and Sinovac COVID-19 Vaccines",
                                 style: GoogleFonts.inter(
@@ -309,7 +307,7 @@ class articlePage extends StatelessWidget {
                             ),
                             Padding(
                               padding:
-                              const EdgeInsets.symmetric(horizontal: 15),
+                                  const EdgeInsets.symmetric(horizontal: 15),
                               child: Row(
                                 children: [
                                   Text(
@@ -352,9 +350,9 @@ class articlePage extends StatelessWidget {
                               padding: const EdgeInsets.all(10),
                               child: Container(
                                 height:
-                                MediaQuery.of(context).size.height * 0.1000,
+                                    MediaQuery.of(context).size.height * 0.1000,
                                 width:
-                                MediaQuery.of(context).size.width * 0.3500,
+                                    MediaQuery.of(context).size.width * 0.3500,
                                 decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(15),
                                     image: const DecorationImage(
@@ -372,7 +370,7 @@ class articlePage extends StatelessWidget {
                                 height: MediaQuery.of(context).size.height *
                                     0.01800,
                                 width:
-                                MediaQuery.of(context).size.width * 0.1200,
+                                    MediaQuery.of(context).size.width * 0.1200,
                                 color: Color.fromARGB(255, 233, 231, 231),
                                 child: Row(
                                     mainAxisAlignment: MainAxisAlignment.center,
@@ -390,7 +388,7 @@ class articlePage extends StatelessWidget {
                             ),
                             Padding(
                               padding:
-                              const EdgeInsets.symmetric(horizontal: 15),
+                                  const EdgeInsets.symmetric(horizontal: 15),
                               child: Text(
                                 "Comparing the AstraZeneca and Sinovac COVID-19 Vaccines",
                                 style: GoogleFonts.inter(
@@ -404,7 +402,7 @@ class articlePage extends StatelessWidget {
                             ),
                             Padding(
                               padding:
-                              const EdgeInsets.symmetric(horizontal: 15),
+                                  const EdgeInsets.symmetric(horizontal: 15),
                               child: Row(
                                 children: [
                                   Text(
@@ -447,9 +445,9 @@ class articlePage extends StatelessWidget {
                               padding: const EdgeInsets.all(10),
                               child: Container(
                                 height:
-                                MediaQuery.of(context).size.height * 0.1000,
+                                    MediaQuery.of(context).size.height * 0.1000,
                                 width:
-                                MediaQuery.of(context).size.width * 0.3500,
+                                    MediaQuery.of(context).size.width * 0.3500,
                                 decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(15),
                                     image: const DecorationImage(
@@ -467,7 +465,7 @@ class articlePage extends StatelessWidget {
                                 height: MediaQuery.of(context).size.height *
                                     0.01800,
                                 width:
-                                MediaQuery.of(context).size.width * 0.1200,
+                                    MediaQuery.of(context).size.width * 0.1200,
                                 color: Color.fromARGB(255, 233, 231, 231),
                                 child: Row(
                                     mainAxisAlignment: MainAxisAlignment.center,
@@ -485,7 +483,7 @@ class articlePage extends StatelessWidget {
                             ),
                             Padding(
                               padding:
-                              const EdgeInsets.symmetric(horizontal: 15),
+                                  const EdgeInsets.symmetric(horizontal: 15),
                               child: Text(
                                 "Comparing the AstraZeneca and Sinovac COVID-19 Vaccines",
                                 style: GoogleFonts.inter(
@@ -499,7 +497,7 @@ class articlePage extends StatelessWidget {
                             ),
                             Padding(
                               padding:
-                              const EdgeInsets.symmetric(horizontal: 15),
+                                  const EdgeInsets.symmetric(horizontal: 15),
                               child: Row(
                                 children: [
                                   Text(
@@ -551,7 +549,7 @@ class articlePage extends StatelessWidget {
           ),
           //Import this from widget
           article(
-              image: "images/article1.png",
+              image: "assets/images/article1.png",
               dateText: "2 min Read",
               duration: "2 min read",
               mainText: "Main text"),
