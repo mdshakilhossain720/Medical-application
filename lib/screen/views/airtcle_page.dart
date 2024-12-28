@@ -40,7 +40,7 @@ class articlePage extends StatelessWidget {
           Container(
               height: MediaQuery.of(context).size.height * 0.06,
               width: MediaQuery.of(context).size.width * 0.06,
-              child: Image.asset("lib/icons/more.png")),
+              child: Image.asset("assets/icons/more.png")),
         ],
       ),
       backgroundColor: Colors.white,

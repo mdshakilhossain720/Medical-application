@@ -26,7 +26,7 @@ class appointment extends StatelessWidget {
             width: 10,
             decoration: const BoxDecoration(
                 image: DecorationImage(
-              image: AssetImage("lib/icons/back1.png"),
+              image: AssetImage("assets/icons/back1.png"),
             )),
           ),
         ),
@@ -45,7 +45,7 @@ class appointment extends StatelessWidget {
               width: 10,
               decoration: const BoxDecoration(
                   image: DecorationImage(
-                image: AssetImage("lib/icons/more.png"),
+                image: AssetImage("assets/icons/more.png"),
               )),
             ),
           ),
@@ -108,7 +108,7 @@ class appointment extends StatelessWidget {
                           borderRadius: BorderRadius.circular(18),
                           image: const DecorationImage(
                             image: AssetImage(
-                              "lib/icons/callender.png",
+                              "assets/icons/callender.png",
                             ),
                             filterQuality: FilterQuality.high,
                           )),
@@ -179,7 +179,7 @@ class appointment extends StatelessWidget {
                           borderRadius: BorderRadius.circular(18),
                           image: const DecorationImage(
                             image: AssetImage(
-                              "lib/icons/pencil.png",
+                              "assets/icons/pencil.png",
                             ),
                             filterQuality: FilterQuality.high,
                           )),
@@ -372,7 +372,7 @@ class appointment extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: 80,
+                height: 85,
                 width: double.infinity,
                 child: Padding(
                   padding: const EdgeInsets.symmetric(
@@ -382,7 +382,7 @@ class appointment extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Container(
-                          height: MediaQuery.of(context).size.height * 0.06,
+                          height: MediaQuery.of(context).size.height * 0.07,
                           width: MediaQuery.of(context).size.width * 0.2100,
                           decoration: const BoxDecoration(),
                           child: Column(
@@ -398,7 +398,7 @@ class appointment extends StatelessWidget {
                                           137, 56, 56, 56)),
                                 ),
                                 const SizedBox(
-                                  height: 5,
+                                  height: 1,
                                 ),
                                 Text(
                                   "  \$61",

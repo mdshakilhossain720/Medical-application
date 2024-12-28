@@ -27,7 +27,7 @@ class doctor_search extends StatelessWidget {
             width: 10,
             decoration: const BoxDecoration(
                 image: DecorationImage(
-              image: AssetImage("lib/icons/back1.png"),
+              image: AssetImage("assets/icons/back1.png"),
             )),
           ),
         ),
@@ -46,7 +46,7 @@ class doctor_search extends StatelessWidget {
               width: 10,
               decoration: const BoxDecoration(
                   image: DecorationImage(
-                image: AssetImage("lib/icons/more.png"),
+                image: AssetImage("assets/icons/more.png"),
               )),
             ),
           ),

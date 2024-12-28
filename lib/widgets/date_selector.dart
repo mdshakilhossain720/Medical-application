@@ -6,7 +6,7 @@ class date_Select extends StatefulWidget {
   final String maintext;
   final String date;
 
-  date_Select({required this.date, required this.maintext});
+  const date_Select({super.key, required this.date, required this.maintext});
 
   @override
   _date_SelectState createState() => _date_SelectState();
@@ -26,7 +26,7 @@ class _date_SelectState extends State<date_Select> {
     return GestureDetector(
       onTap: toggleSelection,
       child: Padding(
-        padding: const EdgeInsets.all(8.0),
+        padding: const EdgeInsets.all(6.0),
         child: Container(
           height: MediaQuery.of(context).size.height * 0.02,
           width: MediaQuery.of(context).size.width * 0.15,
@@ -38,7 +38,7 @@ class _date_SelectState extends State<date_Select> {
             border: Border.all(color: Colors.black12),
           ),
           child: Padding(
-            padding: const EdgeInsets.symmetric(vertical: 12),
+            padding: const EdgeInsets.symmetric(vertical: 8),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [

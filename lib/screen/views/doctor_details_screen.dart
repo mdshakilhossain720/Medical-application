@@ -36,7 +36,7 @@ class _DoctorDetailsState extends State<DoctorDetails> {
               width: 10,
               decoration: const BoxDecoration(
                   image: DecorationImage(
-                image: AssetImage("lib/icons/back1.png"),
+                image: AssetImage("assets/icons/back1.png"),
               )),
             ),
           ),
@@ -55,7 +55,7 @@ class _DoctorDetailsState extends State<DoctorDetails> {
                 width: 10,
                 decoration: const BoxDecoration(
                     image: DecorationImage(
-                  image: AssetImage("lib/icons/more.png"),
+                  image: AssetImage("assets/icons/more.png"),
                 )),
               ),
             ),
@@ -232,7 +232,7 @@ class _DoctorDetailsState extends State<DoctorDetails> {
                             borderRadius: BorderRadius.circular(18),
                             image: const DecorationImage(
                                 image: AssetImage(
-                                  "lib/icons/Chat.png",
+                                  "assets/icons/Chat.png",
                                 ),
                                 filterQuality: FilterQuality.high)),
                       ),

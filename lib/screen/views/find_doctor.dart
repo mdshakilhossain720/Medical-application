@@ -18,7 +18,7 @@ class find_doctor extends StatelessWidget {
           icon: SizedBox(
               height: MediaQuery.of(context).size.height * 0.06,
               width: MediaQuery.of(context).size.width * 0.06,
-              child: Image.asset("lib/icons/back2.png")),
+              child: Image.asset("assets/icons/back2.png")),
           onPressed: () {
             Navigator.of(context).pop();
           },
@@ -186,7 +186,7 @@ class find_doctor extends StatelessWidget {
             ],
           ),
           const SizedBox(
-            height: 10,
+            height: 6,
           ),
           Row(
             children: [
@@ -204,7 +204,7 @@ class find_doctor extends StatelessWidget {
                             filterQuality: FilterQuality.high)),
                   ),
                   const SizedBox(
-                    height: 10,
+                    height: 2,
                   ),
                   const Row(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -227,7 +227,7 @@ class find_doctor extends StatelessWidget {
                             fit: BoxFit.contain)),
                   ),
                   const SizedBox(
-                    height: 10,
+                    height: 2,
                   ),
                   const Row(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -252,7 +252,7 @@ class find_doctor extends StatelessWidget {
                             filterQuality: FilterQuality.high)),
                   ),
                   const SizedBox(
-                    height: 10,
+                    height: 2,
                   ),
                   const Row(
                     mainAxisAlignment: MainAxisAlignment.center,
