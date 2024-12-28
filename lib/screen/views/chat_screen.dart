@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_chat_ui/flutter_chat_ui.dart';
 import 'package:google_fonts/google_fonts.dart';
-
 import 'package:page_transition/page_transition.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
-import 'package:flutter_chat_types/flutter_chat_types.dart' as types;
 
 import '../../widgets/chat_doctor.dart';
 import '../../widgets/chat_info.dart';
@@ -31,8 +28,8 @@ class chat_screen extends StatelessWidget {
             width: 10,
             decoration: const BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage("lib/icons/back1.png"),
-                )),
+              image: AssetImage("assets/icons/back1.png"),
+            )),
           ),
         ),
         // Title of the chat screen
@@ -57,8 +54,8 @@ class chat_screen extends StatelessWidget {
                   width: 18,
                   decoration: const BoxDecoration(
                       image: DecorationImage(
-                        image: AssetImage("lib/icons/video_call.png"),
-                      )),
+                    image: AssetImage("assets/icons/video_call.png"),
+                  )),
                 ),
                 const SizedBox(
                   width: 15,
@@ -69,8 +66,8 @@ class chat_screen extends StatelessWidget {
                   width: 18,
                   decoration: const BoxDecoration(
                       image: DecorationImage(
-                        image: AssetImage("lib/icons/call.png"),
-                      )),
+                    image: AssetImage("assets/icons/call.png"),
+                  )),
                 ),
                 const SizedBox(
                   width: 15,
@@ -81,8 +78,8 @@ class chat_screen extends StatelessWidget {
                   width: 18,
                   decoration: const BoxDecoration(
                       image: DecorationImage(
-                        image: AssetImage("lib/icons/more.png"),
-                      )),
+                    image: AssetImage("assets/icons/more.png"),
+                  )),
                 ),
               ],
             ),
@@ -154,7 +151,7 @@ class chat_screen extends StatelessWidget {
                           children: [
                             Expanded(
                               child: Padding(
-                                padding: EdgeInsets.all(8.0),
+                                padding: const EdgeInsets.all(8.0),
                                 // User's message content
                                 child: Text(
                                   "I have suffering from headache and cold for 3 days, I took 2 tablets of dolo,\nbut still pain",
@@ -168,7 +165,8 @@ class chat_screen extends StatelessWidget {
                               width: MediaQuery.of(context).size.width * 0.05,
                               decoration: const BoxDecoration(
                                   image: DecorationImage(
-                                      image: AssetImage("lib/icons/ticks.png"),
+                                      image:
+                                          AssetImage("assets/icons/ticks.png"),
                                       filterQuality: FilterQuality.high)),
                             )
                           ]),
@@ -229,7 +227,7 @@ class chat_screen extends StatelessWidget {
                           children: [
                             Expanded(
                               child: Padding(
-                                padding: EdgeInsets.all(8.0),
+                                padding: const EdgeInsets.all(8.0),
                                 // User's message content
                                 child: Text(
                                   "I have suffering from headache and cold for 3 days, I took 2 tablets of dolo,\nbut still pain",
@@ -243,7 +241,8 @@ class chat_screen extends StatelessWidget {
                               width: MediaQuery.of(context).size.width * 0.05,
                               decoration: const BoxDecoration(
                                   image: DecorationImage(
-                                      image: AssetImage("lib/icons/ticks.png"),
+                                      image:
+                                          AssetImage("assets/icons/ticks.png"),
                                       filterQuality: FilterQuality.high)),
                             )
                           ]),
@@ -253,13 +252,13 @@ class chat_screen extends StatelessWidget {
               ],
             ),
           ),
-          Container(
+          SizedBox(
             height: MediaQuery.of(context).size.height * 0.1,
             child: Row(children: [
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20),
                 child: Center(
-                  child: Container(
+                  child: SizedBox(
                     height: MediaQuery.of(context).size.height * 0.1,
                     width: MediaQuery.of(context).size.width * 0.82,
                     child: TextField(
@@ -270,20 +269,20 @@ class chat_screen extends StatelessWidget {
                       textAlignVertical: TextAlignVertical.center,
                       decoration: InputDecoration(
                         focusColor: Colors.black26,
-                        fillColor: Color.fromARGB(255, 247, 247, 247),
+                        fillColor: const Color.fromARGB(255, 247, 247, 247),
                         filled: true,
                         prefixIcon: Padding(
                           padding: const EdgeInsets.symmetric(
                             horizontal: 10,
                           ),
-                          child: Container(
+                          child: SizedBox(
                             height: 10,
                             width: 10,
-                            child: Image.asset("lib/icons/pin.png"),
+                            child: Image.asset("assets/icons/pin.png"),
                           ),
                         ),
                         prefixIconColor: const Color.fromARGB(255, 3, 190, 150),
-                        label: Text("Type message ..."),
+                        label: const Text("Type message ..."),
                         floatingLabelBehavior: FloatingLabelBehavior.never,
                         border: OutlineInputBorder(
                           borderSide: BorderSide.none,

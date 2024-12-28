@@ -6,7 +6,7 @@ import 'package:responsive_sizer/responsive_sizer.dart';
 import '../../widgets/tab_bar_view/message_tab_all.dart';
 
 class message_screen extends StatefulWidget {
-  const message_screen({Key? key}) : super(key: key);
+  const message_screen({super.key});
 
   @override
   _TabBarExampleState createState() => _TabBarExampleState();
@@ -56,12 +56,12 @@ class _TabBarExampleState extends State<message_screen>
         backgroundColor: Colors.white,
       ),
       body: SingleChildScrollView(
-        physics: NeverScrollableScrollPhysics(),
+        physics: const NeverScrollableScrollPhysics(),
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 00),
           child: Column(
             children: [
-              Container(
+              SizedBox(
                 height: MediaQuery.of(context).size.height,
                 child: Column(
                   children: [
@@ -72,24 +72,25 @@ class _TabBarExampleState extends State<message_screen>
                         width: MediaQuery.of(context).size.height,
                         decoration: BoxDecoration(
                           border: Border.all(
-                              color: Color.fromARGB(255, 235, 235, 235)),
-                          color: Color.fromARGB(255, 241, 241, 241),
+                              color: const Color.fromARGB(255, 235, 235, 235)),
+                          color: const Color.fromARGB(255, 241, 241, 241),
                           borderRadius: BorderRadius.circular(10),
                         ),
                         child: Column(
                           children: [
                             Padding(
-                              padding: EdgeInsets.all(5),
+                              padding: const EdgeInsets.all(5),
                               child: TabBar(
                                 indicator: BoxDecoration(
-                                  color: Color.fromARGB(255, 5, 185, 155),
+                                  color: const Color.fromARGB(255, 5, 185, 155),
                                   borderRadius: BorderRadius.circular(8),
                                 ),
                                 indicatorColor:
                                     const Color.fromARGB(255, 241, 241, 241),
                                 unselectedLabelColor:
                                     const Color.fromARGB(255, 32, 32, 32),
-                                labelColor: Color.fromARGB(255, 255, 255, 255),
+                                labelColor:
+                                    const Color.fromARGB(255, 255, 255, 255),
                                 controller: tabController,
                                 tabs: const [
                                   Tab(

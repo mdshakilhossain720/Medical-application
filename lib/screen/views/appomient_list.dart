@@ -113,7 +113,7 @@ class appointment extends StatelessWidget {
                             filterQuality: FilterQuality.high,
                           )),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 10,
                     ),
                     Expanded(
@@ -128,7 +128,7 @@ class appointment extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               Padding(
@@ -308,7 +308,7 @@ class appointment extends StatelessWidget {
                       "\$61.00",
                       style: GoogleFonts.poppins(
                           fontSize: 16.sp,
-                          color: Color.fromARGB(255, 4, 92, 58),
+                          color: const Color.fromARGB(255, 4, 92, 58),
                           fontWeight: FontWeight.w600),
                     ),
                   ],
@@ -335,7 +335,7 @@ class appointment extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               Container(
@@ -358,7 +358,7 @@ class appointment extends StatelessWidget {
                               fontStyle: FontStyle.italic,
                               fontSize: 17.sp,
                               fontWeight: FontWeight.w600,
-                              color: Color.fromARGB(255, 38, 39, 117)),
+                              color: const Color.fromARGB(255, 38, 39, 117)),
                         ),
                         Text(
                           "Change",
@@ -371,7 +371,7 @@ class appointment extends StatelessWidget {
                       ]),
                 ),
               ),
-              Container(
+              SizedBox(
                 height: 80,
                 width: double.infinity,
                 child: Padding(
@@ -384,7 +384,7 @@ class appointment extends StatelessWidget {
                         Container(
                           height: MediaQuery.of(context).size.height * 0.06,
                           width: MediaQuery.of(context).size.width * 0.2100,
-                          decoration: BoxDecoration(),
+                          decoration: const BoxDecoration(),
                           child: Column(
                               mainAxisAlignment: MainAxisAlignment.start,
                               children: [
@@ -397,7 +397,7 @@ class appointment extends StatelessWidget {
                                       color: const Color.fromARGB(
                                           137, 56, 56, 56)),
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 5,
                                 ),
                                 Text(
@@ -410,7 +410,7 @@ class appointment extends StatelessWidget {
                                 ),
                               ]),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 10,
                         ),
                         Padding(
@@ -419,7 +419,7 @@ class appointment extends StatelessWidget {
                             height: MediaQuery.of(context).size.height * 0.06,
                             width: MediaQuery.of(context).size.width * 0.4300,
                             decoration: BoxDecoration(
-                              color: Color.fromARGB(255, 2, 179, 149),
+                              color: const Color.fromARGB(255, 2, 179, 149),
                               borderRadius: BorderRadius.circular(30),
                             ),
                             child: Row(

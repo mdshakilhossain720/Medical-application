@@ -7,10 +7,10 @@ class shedule_tab1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       backgroundColor: Colors.white,
       body: Column(children: [
-        const SizedBox(
+        SizedBox(
           height: 30,
         ),
         shedule_card(
@@ -21,7 +21,7 @@ class shedule_tab1 extends StatelessWidget {
           time: "10:30 AM",
           image: "assets/icons/male-doctor.png",
         ),
-        const SizedBox(
+        SizedBox(
           height: 20,
         ),
         shedule_card(

@@ -7,7 +7,7 @@ import '../../screen/views/chat_screen.dart';
 import '../message_all.dart';
 
 class message_tab_all extends StatefulWidget {
-  const message_tab_all({Key? key}) : super(key: key);
+  const message_tab_all({super.key});
 
   @override
   _TabBarExampleState createState() => _TabBarExampleState();
@@ -63,25 +63,25 @@ class _TabBarExampleState extends State<message_tab_all>
                 context,
                 PageTransition(
                   type: PageTransitionType.bottomToTop,
-                  child: chat_screen(),
+                  child: const chat_screen(),
                 ));
           },
-          child: message_all_widget(
+          child: const message_all_widget(
             image: "assets/icons/male-doctor.png",
             Maintext: "Dr. Marcus Horizon",
-            subtext: "I don,t have any fever, but headchace...",
+            subtext: "I don,t have any fever",
             time: "10.24",
             message_count: "2",
           ),
         ),
-        message_all_widget(
+        const message_all_widget(
           image: "assets/images/doctor3.png",
           Maintext: "Dr. Alysa Hana",
           subtext: "Hello, How can i help you?",
           time: "10.24",
           message_count: "1",
         ),
-        message_all_widget(
+        const message_all_widget(
           image: "assets/images/doctor2.png",
           Maintext: "Dr. Maria Elena",
           subtext: "Do you have fever?",
